@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="mentoringForm">
+    <input type="hidden" id="prnHidden">
+    <div class="page" id="page-form106">
+      <header class="header-img-wrap">
+        <img class="header-image" src="https://res.cloudinary.com/dgxgftfbv/image/upload/v1760540148/college_header_logo_lfbqgw.jpg" alt="SANJEEVAN Header">
+        <div class="form-no">No: <span contenteditable="true">106</span></div>
+      </header>
+
+      <!-- Photo & Signature -->
+      <section class="identity-row">
+        <div class="photo-block">
+          <label>Student Photo</label>
+          <div class="image-preview" id="photoPreview"><img id="photoImg" alt=""></div>
+          <input type="file" id="photoInput" accept="image/*">
+        </div>
+        <div class="sign-block">
+          <label>Student Signature</label>
+          <div class="image-preview" id="signPreview"><img id="signImg" alt=""></div>
+          <input type="file" id="signInput" accept="image/*">
+        </div>
+      </section>
+
+      <!-- Student basic details -->
+      <section class="section">
+        <h4>INFORMATION TO BE GIVEN BY THE STUDENT FOR EFFECTIVE MENTORING AND ACADEMICS GUIDANCE</h4>
+        <div class="grid two">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Roll Number<input type="text" name="roll" required></label>
+          <label>Year and Branch<input type="text" name="year_branch" required></label>
+        </div>
+
+        <h5>Previous Academic Record (Fill as applicable)</h5>
+        <div class="scroll-x">
+          <table class="compact">
+            <thead>
+              <tr>
+                <th>% in X</th>
+                <th>% in XII / D.PCO / EXAM CET Rank</th>
+                <th>% in 1st Yr</th>
+                <th>Backlogs in 1st Yr</th>
+                <th>% in 2nd Yr</th>
+                <th>Backlogs in 2nd Yr</th>
+                <th>% in 3rd Yr</th>
+                <th>Backlogs in 3rd Yr</th>
+                <th>% in 4th Yr</th>
+                <th>Backlogs in 4th Yr</th>
+                <th>Overall %</th>
+                <th>Rank / Class</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="text" name="x_pct"></td>
+                <td><input type="text" name="xii_pct"></td>
+                <td><input type="text" name="y1_pct"></td>
+                <td><input type="text" name="y1_back"></td>
+                <td><input type="text" name="y2_pct"></td>
+                <td><input type="text" name="y2_back"></td>
+                <td><input type="text" name="y3_pct"></td>
+                <td><input type="text" name="y3_back"></td>
+                <td><input type="text" name="y4_pct"></td>
+                <td><input type="text" name="y4_back"></td>
+                <td><input type="text" name="overall_pct"></td>
+                <td><input type="text" name="rank_class"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid two">
+          <label>Admitted under Category
+            <input type="text" name="category" placeholder="Open / SC / ST / OBC / VJ / NT / Any">
+          </label>
+          <div></div>
+        </div>
+
+        <div class="grid two">
+          <label>Father's Name<input type="text" name="father_name"></label>
+          <label>Education<input type="text" name="father_edu"></label>
+          <label>Occupation<input type="text" name="father_occ"></label>
+          <label>Cell No.<input type="tel" name="father_cell"></label>
+        </div>
+        <label>Address<textarea name="father_addr" rows="2"></textarea></label>
+
+        <div class="grid two">
+          <label>Mother's Name<input type="text" name="mother_name"></label>
+          <label>Education<input type="text" name="mother_edu"></label>
+          <label>Occupation<input type="text" name="mother_occ"></label>
+          <label>Cell No.<input type="tel" name="mother_cell"></label>
+        </div>
+
+        <div class="grid two">
+          <label>Local Guardian Name<input type="text" name="guardian_name"></label>
+          <label>Cell No.<input type="tel" name="guardian_cell"></label>
+        </div>
+        <label>Address<textarea name="guardian_addr" rows="2"></textarea></label>
+
+        <div class="grid two">
+          <label>Brother's Name<input type="text" name="brother_name"></label>
+          <label>Occupation<input type="text" name="brother_occ"></label>
+          <label>Cell No.<input type="tel" name="brother_cell"></label>
+          <div></div>
+          <label>Sister's Name<input type="text" name="sister_name"></label>
+        </div>
+
+        <ol class="qa">
+          <li>
+            <div class="grid two">
+              <span>Any Particular difficulty experienced in understanding the subject(s), if so, name the subjects</span>
+              <div class="grid three">
+                <input type="text" name="diff_a" placeholder="a.">
+                <input type="text" name="diff_b" placeholder="b.">
+                <input type="text" name="diff_c" placeholder="c.">
+                <input type="text" name="diff_d" placeholder="d.">
+                <input type="text" name="diff_e" placeholder="e.">
+                <input type="text" name="diff_f" placeholder="f.">
+              </div>
+            </div>
+          </li>
+          <li>
+            <label>Any difficulty experienced for coming to college in time (indicate possible remedial actions)
+              <textarea name="diff_commute" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Any issues hampering your studies?
+              <textarea name="issues_studies" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Do you study technical subjects at least Three hours per day outside the college working hours? If not so, why?
+              <textarea name="study_hours" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Any difficulty experienced with regard to the textbooks in the Library?
+              <textarea name="lib_issues" rows="2"></textarea>
+            </label>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Continuation questions (6-15) that belong to Form 106 -->
+      <section class="section">
+        <ol class="qa" start="6">
+          <li>
+            <label>Do you take the assignments seriously and do on your own?
+              <textarea name="q6" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Are you making enough efforts towards improving your English language communication skills? If not, why? Any help needed?
+              <textarea name="q7_reason" rows="3" placeholder="Specify..."></textarea>
+            </label>
+          </li>
+          <li>
+            <label>What are your goals?
+              <textarea name="q8" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>What efforts you have been making to achieve your goals?
+              <textarea name="q9" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>What do you expect to be done by the institute on developing your self-confidence and achievement of goals?
+              <textarea name="q10" rows="3"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Is the atmosphere (environment) at home congenial for your studies?
+              <textarea name="q11" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Are you interested in pursuing literary, cultural and other activities in the college?
+              <textarea name="q12" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>What are your hobbies and talents which need help to be boosted?
+              <textarea name="q13" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Are you interested in Games / Sports?
+              <textarea name="q14" rows="2"></textarea>
+            </label>
+          </li>
+          <li>
+            <label>Any difficulty experienced with regard to cleanliness and hygiene in the institution?
+              <textarea name="q15" rows="2"></textarea>
+            </label>
+          </li>
+        </ol>
+
+        <div class="sign-row end">
+          <label>Date<input type="date" name="stud_date"></label>
+          <div>
+            <div class="sig-line"></div>
+            <div class="sig-caption">Signature of Student</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Mentoring I Page -->
+    <div class="page" id="page-ment1">
+      <header class="header-img-wrap">
+        <img class="header-image" src="https://res.cloudinary.com/dgxgftfbv/image/upload/v1760540148/college_header_logo_lfbqgw.jpg" alt="SANJEEVAN Header">
+        <div class="form-no small">NO: 107</div>
+      </header>
+      
+      <section class="section">
+        <h4>ACADEMIC MENTORING CONDUCTED AT LEAST SIX WEEKS BEFORE THE FIRST MID EXAMINATION (MENTORING-I)</h4>
+
+        <div class="grid two">
+          <label>Student Name<input type="text" name="mi_name"></label>
+          <label>Student Roll Number<input type="text" name="mi_roll"></label>
+          <label>Year and Course of Study<input type="text" name="mi_course"></label>
+          <label>Name of the Mentor<input type="text" name="mi_mentor"></label>
+        </div>
+
+        <div class="confirm">
+          The Student confirms his/her percentage of attendance is 75 and above (till date):
+          <label><input type="radio" name="mi_attend" value="Yes"> Yes</label>
+          <label><input type="radio" name="mi_attend" value="No"> No</label>
+        </div>
+
+        <h5>Please tick one, whichever is addressed.</h5>
+        <table class="checklist">
+          <tbody>
+            <tr><td>Attendance</td><td class="chk"><input type="checkbox" name="mi_chk_attendance"></td></tr>
+            <tr><td>Marks in the Mid Examination(s)</td><td class="chk"><input type="checkbox" name="mi_chk_midmarks"></td></tr>
+            <tr><td>Marks in the Previous semester Examination</td><td class="chk"><input type="checkbox" name="mi_chk_prevmarks"></td></tr>
+            <tr><td>Non-submission of assignments</td><td class="chk"><input type="checkbox" name="mi_chk_assign"></td></tr>
+            <tr><td>Performance in the lab (internal and/or external)</td><td class="chk"><input type="checkbox" name="mi_chk_lab"></td></tr>
+            <tr><td>Non-Participation in the class activities</td><td class="chk"><input type="checkbox" name="mi_chk_class"></td></tr>
+            <tr><td>Lack of interest in Engineering Course</td><td class="chk"><input type="checkbox" name="mi_chk_interest"></td></tr>
+            <tr><td>Lack of Motivation to do well</td><td class="chk"><input type="checkbox" name="mi_chk_motivation"></td></tr>
+          </tbody>
+        </table>
+
+        <h5>Nature of academic mentoring provided (tick all that apply)</h5>
+        <ul class="ticks two-cols">
+          <li><label><input type="checkbox" name="mi_n1"> Importance of Attendance and its implication</label></li>
+          <li><label><input type="checkbox" name="mi_n2"> Importance of Mid Examinations and consequence</label></li>
+          <li><label><input type="checkbox" name="mi_n3"> Importance of previous semester marks and career</label></li>
+          <li><label><input type="checkbox" name="mi_n4"> Submission of assignments and impact</label></li>
+          <li><label><input type="checkbox" name="mi_n5"> Importance of laboratory exercises</label></li>
+          <li><label><input type="checkbox" name="mi_n6"> Participation in class activities</label></li>
+          <li><label><input type="checkbox" name="mi_n7"> Importance of getting Engineering Degree & future paths</label></li>
+          <li><label><input type="checkbox" name="mi_n8"> Importance of self-motivation for career and life</label></li>
+        </ul>
+
+        <label>If any other issue is addressed, please specify
+          <textarea name="mi_other" rows="2"></textarea>
+        </label>
+
+        <div class="sign-row">
+          <div>
+            <label>Date<input type="date" name="mi_date"></label>
+          </div>
+          <div class="signatures">
+            <div>
+              <div class="sig-line"></div>
+              <div class="sig-caption">Signed: Mentor</div>
+            </div>
+            <div>
+              <div class="sig-line"></div>
+              <div class="sig-caption">Student</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hod">
+          <label>Date<input type="date" name="mi_hod_date"></label>
+          <div>
+            <div class="sig-line"></div>
+            <div class="sig-caption">Head of the Department Signature</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Mentoring II Page -->
+    <div class="page" id="page-ment2">
+      <header class="header-img-wrap">
+        <img class="header-image" src="https://res.cloudinary.com/dgxgftfbv/image/upload/v1760540148/college_header_logo_lfbqgw.jpg" alt="SANJEEVAN Header">
+        <div class="form-no small">NO: 107</div>
+      </header>
+
+      <section class="section">
+        <h4>ACADEMIC COUNSELLING CONDUCTED AT LEAST SIX WEEKS BEFORE THE SECOND MID EXAMINATION (MENTORING-II)</h4>
+
+        <div class="grid two">
+          <label>Student Name<input type="text" name="mii_name"></label>
+          <label>Student Roll Number<input type="text" name="mii_roll"></label>
+          <label>Year and Course of Study<input type="text" name="mii_course"></label>
+          <label>Name of the Mentor<input type="text" name="mii_mentor"></label>
+        </div>
+
+        <div class="confirm">
+          The Student confirms his/her percentage of attendance is 75 and above (till date):
+          <label><input type="radio" name="mii_attend" value="Yes"> Yes</label>
+          <label><input type="radio" name="mii_attend" value="No"> No</label>
+        </div>
+
+        <h5>Tick all that have been addressed and mentoring given</h5>
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th style="width:40px">S. No.</th>
+              <th>After the previous MENTORING till date</th>
+              <th>Yes</th>
+              <th>No</th>
+              <th>Insignificant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Any improvement observed in the attendance of the student?</td><td class="chk"><input type="radio" name="mii_1" value="Yes"></td><td class="chk"><input type="radio" name="mii_1" value="No"></td><td class="chk"><input type="radio" name="mii_1" value="Ins"></td></tr>
+            <tr><td>2</td><td>Any improvement in the marks scored by the student?</td><td class="chk"><input type="radio" name="mii_2" value="Yes"></td><td class="chk"><input type="radio" name="mii_2" value="No"></td><td class="chk"><input type="radio" name="mii_2" value="Ins"></td></tr>
+            <tr><td>3</td><td>Did the student understand the relevance of earlier course work vis-a-vis this semester?</td><td class="chk"><input type="radio" name="mii_3" value="Yes"></td><td class="chk"><input type="radio" name="mii_3" value="No"></td><td class="chk"><input type="radio" name="mii_3" value="Ins"></td></tr>
+            <tr><td>4</td><td>Did the student understand importance of participation in classroom activities for career building?</td><td class="chk"><input type="radio" name="mii_4" value="Yes"></td><td class="chk"><input type="radio" name="mii_4" value="No"></td><td class="chk"><input type="radio" name="mii_4" value="Ins"></td></tr>
+            <tr><td>5</td><td>Relevance of Laboratory exercises and correlation to theory?</td><td class="chk"><input type="radio" name="mii_5" value="Yes"></td><td class="chk"><input type="radio" name="mii_5" value="No"></td><td class="chk"><input type="radio" name="mii_5" value="Ins"></td></tr>
+            <tr><td>6</td><td>Importance of self motivation in career building and life</td><td class="chk"><input type="radio" name="mii_6" value="Yes"></td><td class="chk"><input type="radio" name="mii_6" value="No"></td><td class="chk"><input type="radio" name="mii_6" value="Ins"></td></tr>
+            <tr><td>7</td><td>Any perceptible change in the attitude of the student?</td><td class="chk"><input type="radio" name="mii_7" value="Yes"></td><td class="chk"><input type="radio" name="mii_7" value="No"></td><td class="chk"><input type="radio" name="mii_7" value="Ins"></td></tr>
+            <tr><td>8</td><td>Is the student sensitive to constructive criticism?</td><td class="chk"><input type="radio" name="mii_8" value="Yes"></td><td class="chk"><input type="radio" name="mii_8" value="No"></td><td class="chk"><input type="radio" name="mii_8" value="Ins"></td></tr>
+            <tr><td>9</td><td>Any perceptible change observed in the confidence level of the student?</td><td class="chk"><input type="radio" name="mii_9" value="Yes"></td><td class="chk"><input type="radio" name="mii_9" value="No"></td><td class="chk"><input type="radio" name="mii_9" value="Ins"></td></tr>
+          </tbody>
+        </table>
+
+        <label>If any other issue was addressed and mentoring given to that effect, specify
+          <textarea name="mii_other" rows="2"></textarea>
+        </label>
+
+        <div class="sign-row">
+          <div>
+            <label>Date<input type="date" name="mii_date"></label>
+          </div>
+          <div class="signatures">
+            <div>
+              <div class="sig-line"></div>
+              <div class="sig-caption">Signed: Advisor / Mentor</div>
+            </div>
+            <div>
+              <div class="sig-line"></div>
+              <div class="sig-caption">Student</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hod">
+          <label>Date<input type="date" name="mii_hod_date"></label>
+          <div>
+            <div class="sig-line"></div>
+            <div class="sig-caption">Head of the Department Signature</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="actions">
+      <button type="submit">Save</button>
+      <button type="button" onclick="window.print()">Print</button>
+    </div>
+  </form>
+
+  <!-- Firebase CDN (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
